@@ -8,7 +8,7 @@
 
 import React, { Children } from 'react';
 import PropTypes from 'prop-types';
-
+import './button.scss';
 import A from './A';
 import StyledButton from './StyledButton';
 import Wrapper from './Wrapper';
@@ -16,9 +16,9 @@ import Wrapper from './Wrapper';
 function Button(props) {
   // Render an anchor tag
   let button = (
-    <A href={props.href} onClick={props.onClick}>
+    <button className="danger" href={props.href} onClick={props.onClick}>
       {Children.toArray(props.children)}
-    </A>
+    </button>
   );
 
   // If the Button has a handleRoute prop, we want to render a button

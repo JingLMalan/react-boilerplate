@@ -18,6 +18,10 @@ export default styled(Link)`
   border: 2px solid #41addd;
   color: #41addd;
 
+  &:hover {
+    background-color: orange;
+    color: white;
+  }
   &:active {
     background: #41addd;
     color: #fff;

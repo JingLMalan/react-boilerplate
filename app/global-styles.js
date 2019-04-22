@@ -13,13 +13,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body.fontLoaded {
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Lobster', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
   #app {
-    background-color: #fafafa;
     min-height: 100%;
     min-width: 100%;
+    @media (min-height: 875px) {
+      background-color: lightblue;
+    }
   }
 
   p,
